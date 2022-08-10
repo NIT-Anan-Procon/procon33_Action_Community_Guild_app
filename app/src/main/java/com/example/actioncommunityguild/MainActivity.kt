@@ -17,23 +17,33 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //下部ナビゲーションのレイアウトIDを設定
         //ビューバインディングを有効にしている(findViewByIdを使いやすくしたもの)
         //findViewById(R.id.nav_view) と binding.navView は同じ意味
+
         val navView: BottomNavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_new
+                R.id.navigation_movies, R.id.navigation_receive, R.id.navigation_judge, R.id.navigation_request
             )
         )
+        //intent時の処理
+        val textView = binding.tvUserName
+        val imageButton = binding.imageButtonRestart
+        val value1 = intent.getStringExtra("VALUE")
+        textView.text = value1 + "さん"
+        imageButton.setOnClickListener {
+            finish()
+        }
+
         //アクションバーの文字列（記述しなければプロジェクト名が表示）を各フラグメントの文字列に変更するコード
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        //setupActionBarWithNavController(navController, appBarConfiguration)
+        //画面遷移ができるようにするコード（大切）
         navView.setupWithNavController(navController)
     }
 }

@@ -1,13 +1,13 @@
-package com.example.actioncommunityguild.ui.dashboard
+package com.example.actioncommunityguild.ui.receive
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class ReceiveViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "ダッシュボード画面はココやで"
+        value = "受注画面"
     }
     val text: LiveData<String> = _text
 }

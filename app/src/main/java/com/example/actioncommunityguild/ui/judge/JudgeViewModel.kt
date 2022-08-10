@@ -1,13 +1,13 @@
-package com.example.actioncommunityguild.ui.newEdit
+package com.example.actioncommunityguild.ui.judge
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NewViewModel : ViewModel() {
+class JudgeViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "新規画面はココやで"
+        value = "審査画面"
     }
     val text: LiveData<String> = _text
 }

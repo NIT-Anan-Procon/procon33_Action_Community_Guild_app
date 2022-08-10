@@ -1,4 +1,4 @@
-package com.example.actioncommunityguild.ui.newEdit
+package com.example.actioncommunityguild.ui.judge
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.actioncommunityguild.databinding.FragmentNewBinding
+import com.example.actioncommunityguild.databinding.FragmentJudgeBinding
 
-class NewFragment : Fragment() {
+class JudgeFragment : Fragment() {
 
-    private var _binding: FragmentNewBinding? = null
+    private var _binding: FragmentJudgeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,16 +22,12 @@ class NewFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val newViewModel =
-            ViewModelProvider(this).get(NewViewModel::class.java)
+        val judgeViewModel =
+            ViewModelProvider(this).get(JudgeViewModel::class.java)
 
-        _binding = FragmentNewBinding.inflate(inflater, container, false)
+        _binding = FragmentJudgeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNew
-        newViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 

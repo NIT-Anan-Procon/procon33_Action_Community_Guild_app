@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/firstLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageIcon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_button_a_108dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imageIcon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_request_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="○○やってみた"
+                    android:textSize="20sp"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tv_request_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="sato"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

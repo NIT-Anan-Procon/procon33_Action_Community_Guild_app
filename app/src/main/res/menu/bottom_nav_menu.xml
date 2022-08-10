@@ -4,22 +4,21 @@
 
     <!-- 表示したい各itemのid,icon,titleを設定 -->
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:id="@+id/navigation_movies"
+        android:icon="@drawable/ic_movies_black_24dp"
+        android:title="@string/title_movies" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
-
+        android:id="@+id/navigation_receive"
+        android:icon="@drawable/ic_receive_black_24dp"
+        android:title="@string/title_receive" />
     <item
-        android:id="@+id/navigation_new"
-        android:icon="@drawable/ic_new_black_24dp"
-        android:title="@string/title_new" />
+        android:id="@+id/navigation_request"
+        android:icon="@drawable/ic_request_black_24dp"
+        android:title="@string/title_request" />
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:id="@+id/navigation_judge"
+        android:icon="@drawable/ic_judge_black_24dp"
+        android:title="@string/title_judge" />
 
 </menu>
