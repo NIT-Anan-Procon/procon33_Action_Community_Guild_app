@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">ActionCommunityGuild</string>
-    <string name="title_home">ホーム</string>
-    <string name="title_dashboard">ダッシュボード</string>
-    <string name="title_notifications">通知</string>
-    <string name="title_new">ニュー</string>
+    <string name="app_name">行動受注集会所</string>
+    <string name="title_movies">動画</string>
+    <string name="title_receive">受注</string>
+    <string name="title_request">依頼</string>
+    <string name="title_judge">審査</string>
+    <string name="button_send_request">送信</string>
 </resources>

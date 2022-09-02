@@ -3,29 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_movies">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.actioncommunityguild.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_movies"
+        android:name="com.example.actioncommunityguild.ui.movies.MoviesFragment"
+        android:label="@string/title_movies"
+        tools:layout="@layout/fragment_movies" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.actioncommunityguild.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_receive"
+        android:name="com.example.actioncommunityguild.ui.receive.ReceiveFragment"
+        android:label="@string/title_receive"
+        tools:layout="@layout/fragment_receive" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.actioncommunityguild.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_judge"
+        android:name="com.example.actioncommunityguild.ui.judge.JudgeFragment"
+        android:label="@string/title_judge"
+        tools:layout="@layout/fragment_judge" >
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_new"
-        android:name="com.example.actioncommunityguild.ui.newEdit.NewFragment"
-        android:label="@string/title_new"
-        tools:layout="@layout/fragment_new" />
+        android:id="@+id/navigation_request"
+        android:name="com.example.actioncommunityguild.ui.request.RequestFragment"
+        android:label="@string/title_request"
+        tools:layout="@layout/fragment_request" >
+    </fragment>
 </navigation>
