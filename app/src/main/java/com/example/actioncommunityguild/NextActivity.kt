@@ -25,7 +25,7 @@ class NextActivity : AppCompatActivity() {
         val webView = binding.webView
         webView.webViewClient = WebViewClient()
         //localhostへ接続するにはurlを「http://localhost:8080/~~」から「http://10.0.2.2:8080/~~」に変える必要がある。
-        webView.loadUrl("http://10.0.2.2:8080/procon33_ver2/procon33_Action_Community_Guild_WebApps/Login/assignment.html")
+        webView.loadUrl("http://202.231.44.30:8081/Login/assignment.html")
 
     }
 }

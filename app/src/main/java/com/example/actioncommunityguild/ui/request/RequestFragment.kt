@@ -79,7 +79,7 @@ class RequestFragment : Fragment() {
         })
         webView.settings.javaScriptEnabled = true
         //localhostへ接続するにはurlを「http://localhost:8080/~~」から「http://10.0.2.2:8080/~~」に変える必要がある。
-        webView.loadUrl("http://10.0.2.2:8080/procon33_ver2/procon33_Action_Community_Guild_WebApps/")
+        webView.loadUrl("http://202.231.44.30:8081/Request/request.php")
 
         return root
     }
