@@ -5,20 +5,20 @@
     <!-- 表示したい各itemのid,icon,titleを設定 -->
     <item
         android:id="@+id/navigation_movies"
-        android:icon="@drawable/ic_movies_black_24dp"
-        android:title="@string/title_movies" />
+        android:icon="@drawable/ic_receive_black_24dp"
+        android:title="ホーム" />
 
     <item
         android:id="@+id/navigation_receive"
-        android:icon="@drawable/ic_receive_black_24dp"
-        android:title="@string/title_receive" />
+        android:icon="@drawable/ic_movies_black_24dp"
+        android:title="受注" />
     <item
         android:id="@+id/navigation_request"
         android:icon="@drawable/ic_request_black_24dp"
-        android:title="@string/title_request" />
+        android:title="依頼" />
     <item
         android:id="@+id/navigation_judge"
         android:icon="@drawable/ic_judge_black_24dp"
-        android:title="@string/title_judge" />
+        android:title="審査" />
 
 </menu>

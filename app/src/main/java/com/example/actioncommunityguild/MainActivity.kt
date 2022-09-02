@@ -33,10 +33,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
         //intent時の処理
-        val textView = binding.tvUserName
         val imageButton = binding.imageButtonRestart
-        val value1 = intent.getStringExtra("VALUE")
-        textView.text = value1 + "さん"
         imageButton.setOnClickListener {
             finish()
         }

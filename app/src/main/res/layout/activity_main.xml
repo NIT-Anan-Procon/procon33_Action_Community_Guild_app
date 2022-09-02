@@ -50,17 +50,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/tv_user_name"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:hint="USER NAME"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="@+id/line_horizontal_center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <ImageButton
             android:id="@+id/image_button_restart"
             android:layout_width="wrap_content"
@@ -69,7 +58,7 @@
             android:contentDescription="logout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_user_name"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
