@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_movies">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_movies"
-        android:name="com.example.actioncommunityguild.ui.movies.MoviesFragment"
-        android:label="@string/title_movies"
-        tools:layout="@layout/fragment_movies" />
+        android:id="@+id/navigation_home"
+        android:name="com.example.actioncommunityguild.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_receive"
@@ -21,13 +21,12 @@
         android:id="@+id/navigation_judge"
         android:name="com.example.actioncommunityguild.ui.judge.JudgeFragment"
         android:label="@string/title_judge"
-        tools:layout="@layout/fragment_judge" >
-    </fragment>
+        tools:layout="@layout/fragment_judge" />
 
     <fragment
         android:id="@+id/navigation_request"
         android:name="com.example.actioncommunityguild.ui.request.RequestFragment"
         android:label="@string/title_request"
-        tools:layout="@layout/fragment_request" >
-    </fragment>
+        tools:layout="@layout/fragment_request" />
+
 </navigation>

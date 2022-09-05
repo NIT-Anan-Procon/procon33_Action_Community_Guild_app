@@ -7,7 +7,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.actioncommunityguild.databinding.ActivityMainBinding
 
@@ -29,14 +28,9 @@ class MainActivity : AppCompatActivity() {
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_movies, R.id.navigation_receive, R.id.navigation_judge, R.id.navigation_request
+                R.id.navigation_home, R.id.navigation_receive, R.id.navigation_judge, R.id.navigation_request
             )
         )
-        //intent時の処理
-        val imageButton = binding.imageButtonRestart
-        imageButton.setOnClickListener {
-            finish()
-        }
 
         //アクションバーの文字列（記述しなければプロジェクト名が表示）を各フラグメントの文字列に変更するコード
         //setupActionBarWithNavController(navController, appBarConfiguration)

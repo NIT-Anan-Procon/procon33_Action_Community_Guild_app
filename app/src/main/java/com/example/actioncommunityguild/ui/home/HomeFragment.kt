@@ -1,4 +1,4 @@
-package com.example.actioncommunityguild.ui.movies
+package com.example.actioncommunityguild.ui.home
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.actioncommunityguild.databinding.FragmentMoviesBinding
+import com.example.actioncommunityguild.databinding.FragmentHomeBinding
 
-class MoviesFragment : Fragment() {
+class HomeFragment : Fragment() {
 
-    private var _binding: FragmentMoviesBinding? = null
+    private var _binding: FragmentHomeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,9 +25,9 @@ class MoviesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val moviesViewModel =
-            ViewModelProvider(this).get(MoviesViewModel::class.java)
+            ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        _binding = FragmentMoviesBinding.inflate(inflater, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val webView = binding.webView
