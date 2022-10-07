@@ -65,6 +65,7 @@ class ReceiveFragment : Fragment() {
             }
         })
         webView.settings.javaScriptEnabled = true
+        webView.settings.domStorageEnabled = true
         //localhostへ接続するにはurlを「http://localhost:8080/~~」から「http://10.0.2.2:8080/~~」に変える必要がある。
         webView.loadUrl("http://202.231.44.30:8081/Receive/receiveList.php")
 
